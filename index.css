@@ -46,10 +46,6 @@ a {
     align-content: center;
 }
 #izq, #der {
-    /* display: none; */
-    /* position: absolute; */
-
-    /* float: left; */
     width: 0%;
     height: 100vh;
     transition: all 7seg ease;
@@ -59,21 +55,17 @@ a {
     align-items: center;
     overflow: hidden;
 }
-.inicial {
+/* .inicial {
     width: 10%;
 }
 .mitad {
     width: 50%;
-}
+} */
 #izq {
     position: relative;
-    /* display: flex; */
-    background: rgb(0,102,115); /*rgba(0, 0, 0, .9);*/
+    background: rgb(0,102,115); 
     margin-right: 0;
     max-width: 100%;
-    /* min-width: max-content; */
-    /* margin-left: auto; */
-    /* align-self: flex-end; */
     left: 0;
 }
 #der {
@@ -92,13 +84,12 @@ a {
 .textoTitulo2 {
     color: grey;
 }
-
 .tituloSeccion {
     width: 80%;
     margin: auto;
     text-align: left;
 }
-.textoConversemos {
+/* .textoConversemos {
     position: absolute;
     color: black;
     font-size: 2.5rem;
@@ -106,8 +97,7 @@ a {
      text-shadow: none;
     font-weight: 500;
     align-self: flex-end;
-    /* border: black solid 2px; */
-}
+} */
 .animacion-formulario {
     position: absolute;
     top: 0;
@@ -119,16 +109,6 @@ a {
     width: 100%;
     
 }
-/* #divOver {
-    position: absolute;
-    display: none;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 10vh;
-    background: white;
-    z-index: 201;
-} */
 #soloTexto {
     position: absolute;
     display: none;
@@ -141,36 +121,19 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    /* align-items: flex-end;
-    text-align: end; */
-
-
-    /* margin-right: 0;
-    margin-left: auto; */
-    
 }
 #soloTexto .textoMonica {
-    /* margin-right: 2rem; */
     color: orangered;
-    /* display: flex;
-    margin-right: 0;
-    right: 0;
-    margin-left: auto;
-    align-self: flex-end;
-    align-items:flex-end; */
-
     font-size: 2rem;
     margin: auto;
     align-self: center;
     width: max-content;
     min-width: max-content;
 }
-
 #soloTexto .textoTitulo1 {
     color: grey;
     font-size: 1rem;
 }
-
 .textoIzq {
     flex-direction: row;
     margin-right: 0;
@@ -194,7 +157,6 @@ a {
 .textoMonica, .textoCuezzo {
     font-weight:bolder;
 }
-
 header {
     /*position: -webkit-sticky;*/
     position: fixed;
@@ -205,19 +167,14 @@ header {
     display: flex;
     height: max-content;
     min-height: max-content;
-    /* background: transparent; */
     color: rgb(172, 172, 172);  
     padding: 0;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-
     float: left;
-    
-    
     flex-direction: column;
     background: rgb(230, 230, 230);
-
 }
 footer {
     float: left;
@@ -269,7 +226,6 @@ footer {
     width: 40%;
     margin-left: 5%;
     height: 50vh;
-    /* height: max-content; */
     min-height: max-content;
     display: flex;
     flex-direction: row;
@@ -285,12 +241,10 @@ footer {
     height: max-content;
     min-height: max-content;
 }
-
-footer .icon {
-    color: orangered; /*rgb(248, 117, 69)*/
+/* footer .icon {
+    color: orangered; 
     font-size: 3rem;
-}
-
+} */
 nav {
     z-index: 200;
     min-width: 100%;
@@ -301,7 +255,6 @@ nav {
     align-self: center;
     margin: auto;
     border-top: orangered 2px solid;
-    /* padding-top: 0.5rem; */
 }
 #menu {
     width: 100%;
@@ -311,7 +264,6 @@ nav {
     background: rgb(0,102,115); /*rgb(3, 101, 140); /* background: black; */
     padding-bottom: 0.5rem ;
 }
-
 #menu-line, #menu-icon {
     padding: .5em;
     background: white;
@@ -319,9 +271,7 @@ nav {
     border: none;
     z-index: 199;
 }
-
 .toggle-menu {
-    /* margin-left: 1rem; */
     cursor: pointer;
     align-self: flex-start;
 }
@@ -330,17 +280,16 @@ nav {
     flex-direction: row;
 }
 .activo {
-    /* color: teal; */
     font-weight: bolder;
     font-size: 1.1rem;
     border-bottom: solid 5px orangered;
 }
-.animacion-imagenes {
+/* .animacion-imagenes {
     position: absolute;
     top: 25%;
     left: 25%;
     z-index: 300;
-}
+} */
 .contactame {
     display: none;
     position: absolute;
@@ -358,7 +307,6 @@ nav {
 }
 button {
     cursor: pointer;
-
 }
 #borrar {
     position: relative;
@@ -367,60 +315,50 @@ button {
     max-width: 100%;
     min-height: 98vh;
 }
-.borrar1 {
+/* .borrar1 {
     color: white;
     position: absolute;
     top: 0;
     padding-left: 5%;
     padding-top: 10%;
     width: 45%;
-    
     line-height: 1.5rem;
     text-align: justify;
     z-index: 200;
-
-}
-.borrar2 {
-    /* position: absolute; */
+} */
+/* .borrar2 {
     top: 0;
-
-}
+} */
 .borrar3 {
     position: relative;
 }
-.borrar5 {
+/* .borrar5 {
     margin: 2rem 0;
     width: 40%;
     max-width: 40%;
     min-width: 300px;
-}
-.borrar6 {
+} */
+/* .borrar6 {
     width: 100%;
     height: auto;
-}
-.borrar7 {
+} */
+/* .borrar7 {
     position: absolute;
     color: white;
     top: 10%;
     left: 10%;
     z-index: 250;
     font-size: 5rem;
-}
+} */
 .servicio {
     float: left;
     width: 13rem;
     height: 12rem;
-    /* margin: auto; */
     color: black;
     margin-bottom: 2rem;
     text-align: center;
-    /* padding: 1rem; */
-     /* transition: all 1s; */
      overflow: hidden;
 }
-/* .servicio:hover{
-    color: white;
-} */
 .contenidoServicio {
     width: 13rem;
     height: 12rem;
@@ -433,13 +371,13 @@ button {
 }
 .servicio:hover .contenidoServicio {
     margin-top: -12rem;
-  }
+}
 .servicio:hover .borrar8 {
     color:rgb(0,102,115);
-  }
-  .servicio:hover h6 {
+}
+.servicio:hover h6 {
     color:orange;
-  }
+}
 .verde {
     color: rgb(0,102,115); 
 }
@@ -459,14 +397,14 @@ button {
     text-align: center;
     color: orangered;
 }
-.borrar9 {
+/* .borrar9 {
     width: 100%;
     min-height: 98vh;
     display: flex;
     padding: 10%;
     flex-wrap: wrap;
-}
-.borrar10 {
+} */
+/* .borrar10 {
     padding-left: 1rem;
     padding-right: 1rem;
     cursor: pointer;
@@ -474,14 +412,14 @@ button {
 .borrar10 p {
     padding: 0;
     margin: 0;
-}
-.borrar11 {
+} */
+/* .borrar11 {
     width: 100%;
     min-height: 98vh;
     position: relative;
     float: left;
-}
-.borrar12 {
+} */
+/* .borrar12 {
     display: none;
     position: absolute;
     top: 0;
@@ -489,8 +427,8 @@ button {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, .5);
-}
-.borrar13 {
+} */
+/* .borrar13 {
     display: none;
     position: absolute;
     top: 25%;
@@ -502,20 +440,13 @@ button {
     padding: 1%;   
     background-color: white;
     border: orangered solid 2px;
-}
-.borrar14 {
-
+} */
+/* .borrar14 {
     display: none;
     position: absolute;
     top: 25%;
     right: 25%;
     z-index: 101;
-    /* width: 50%; */
-    /* height: max-content; */
-    /* text-align: center; */
-    /* margin-left: 25%; */
-    /* padding: 1%;    */
-    /* background-color: white; */
 }
 .borrar14 button {
     border: none;
@@ -526,13 +457,12 @@ button {
 .borrar14 button i{
     margin: 0;
     padding: 0;
-}
+} */
 .borrar20 {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
     padding-left: 10%;
     padding-right: 10%;
     flex-wrap: wrap;
@@ -553,7 +483,6 @@ h1, h2 {
     color: transparent;
 }
 h2 {
-    /* color: rgb(179, 178, 178); */
     color: rgb(158, 157, 157);
     font-size: 1.1rem;
     font-weight: bold;
@@ -603,39 +532,37 @@ hr {
 }
 .marginRigth {
     margin-right: -0.5rem;
-    
 }
-
-h4 {
+/* h4 {
     align-self: center;
     font-size: 1.8rem;
-    color: orangered; /*rgb(248, 117, 69)*/
+    color: orangered;  
 }
 h5 {
     font-size: 1px;
     display: inline;
     margin: 0;
     padding: 0;
-}
+} */
 h6 {
     align-self: center;
     font-size: 1.6rem;
     color: orangered; /*rgb(248, 117, 69)*/
     text-shadow: 0.5px 0.5px 0.5px rgb(134, 134, 134);
 }
-.shadow {
+/* .shadow {
     text-shadow: 1px 1px 2px rgb(107, 106, 106);
-}
-.marginxx {
+} */
+/* .marginxx {
     margin-top: 3rem;
-}
-.data2 {
+} */
+/* .data2 {
     width: max-content;
     min-width: max-content;
     position: absolute;
     top: 15%;
     right: 10%;
-}
+} */
 .data {
     display: flex;
     justify-content: space-around;
@@ -661,13 +588,11 @@ h6 {
     color:   orangered;
     display: block;
 }
-
 .icon-data:hover {
     background: rgba(255, 255, 255, .2);
     border: rgba(255, 255, 255, .8) solid 1px;
     border-radius: 3px;
 }
-
 .texto-icon {
     display: inline;
     margin: 0;
@@ -677,13 +602,11 @@ h6 {
     border: rgba(255, 255, 255, .8) solid 1px;
     border-radius: 3px;
 }
-
 nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*flex-direction: column;*/
     list-style: none;
 }
 nav ul li {
@@ -692,12 +615,11 @@ nav ul li {
     min-width: max-content;
     padding: 0 2rem;
 }
-
 nav ul li a{
     color: inherit;
 } 
 nav ul li a:hover{
-    color: orange; /*teal;/*white;*/
+    color: orange; 
 }
 .banner {
     position: relative;
@@ -708,7 +630,6 @@ nav ul li a:hover{
     align-content: center;
     overflow:hidden;
     display: flex;
-    
     justify-content: center;
     align-items: center;
 }
@@ -746,21 +667,20 @@ nav ul li a:hover{
     height: 120vh;
     background-color: rgba(0, 0, 0, .07); 
 }
-
-.image {
+/* .image {
     width: 100%;
     float: left;
     border: white solid 3px;
     box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
-}
-.image-border {
+} */
+/* .image-border {
     border: rgba(0, 0, 0, .1) solid 1.5px;
-}
-.image1 {
+} */
+/* .image1 {
     margin: 2rem 0;
     width: 20%;
     min-width: 300px;
-}
+} */
 .text0 {
     width: 100%;
     max-width: 100%;
@@ -779,23 +699,18 @@ nav ul li a:hover{
     height: 98vh;
     max-height: max-content;
     min-height: max-content;
-
-    /*  */
     flex-wrap: wrap;
 }
-.text3 {
+/* .text3 {
     float: left;
     width: 100%;
     color: rgba(0, 0, 0, .8);
     line-height: 1.5rem; 
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     font-size: 1rem;
     height: max-content;
-    /* align-items: center;
-    justify-content: center; */
-}
+} */
 .text5 {
     position: relative;
     float: left;
@@ -808,19 +723,15 @@ nav ul li a:hover{
     flex-direction: column;
     font-size: 1rem;
 }
-
-.content {
+/* .content {
     display: flex;
     padding-top: 7%;
-    /* justify-content: center; */
-    /*align-items: center; */
-}
+} */
 .laboralContenido {
     position: relative;
     width: 70%;
     height: max-content;
     margin: auto;
-    /* display: flex; */
 }
 .laboralTexto {
     float: left;
@@ -857,7 +768,7 @@ nav ul li a:hover{
 .laboralDetalle {
     font-size: 1.4rem;
 }
-.col1{
+/* .col1{
     display: flex;
     width: 18%;
     max-width: 18%;
@@ -865,8 +776,8 @@ nav ul li a:hover{
     margin-right: 2%;
     justify-content:space-around;
     line-height: 2rem;
-}
-.col2 {
+} */
+/* .col2 {
     float: left;
     display: flex;
     justify-content:space-around;
@@ -878,20 +789,18 @@ nav ul li a:hover{
 }
 .col2 ul li {
     list-style-type: square;
-}
+} */
 p {
     margin-top: 1rem;
 }
-.comun {
+/* .comun {
     margin: 0;
-}
+} */
 .contenidoGaleria {
     width: 100%;
-    /* float: left; */
     position: relative;
     display: flex;
     align-items: center;
-    /* margin-top: 7%; */
     height: max-content;
     min-height: max-content;
 }
@@ -899,10 +808,8 @@ p {
     width: 100%;
     position: relative;
     height: 90vh;
-    /* height: max-content; */
     display: flex;
     align-items: center;
-    /* min-height: max-content; */
     overflow-x: hidden;
     overflow-y:visible;
 }
@@ -917,9 +824,7 @@ p {
     list-style:none;
     min-width: 40%;
     max-width: 40%;
-    /* height: auto; */
     overflow: visible;
-
 }
 .elemento {
     background: rgb(222, 102, 0);
@@ -929,8 +834,7 @@ p {
     color: white;
     overflow:visible;
 }
-#page6 .elemento {
-    /* background: white; */
+/* #page6 .elemento {
     background: linear-gradient(#fff, rgb(104, 103, 103)); 
     border: rgba(0, 0, 0, .5) 2px solid;
     padding:  1rem;
@@ -938,21 +842,17 @@ p {
     color: white;
     overflow:visible;
     filter: invert(0.2);
-}
+} */
 
 .elemento a{
     overflow: visible;
-
 }
 .elemento:hover {
     background-color: white;
-    /* background-color: rgba(255, 255, 255, .4); */
     /* filter:  drop-shadow(8px 8px 10px rgba(0, 0, 0, .3)); */
     color: orangered;
     font-weight: bolder;
-    /* box-shadow: 10px 10px 10px  rgba(0, 0, 0, .4); */
     box-shadow: 0 0 0 2000px  rgba(0, 0, 0, .7); /*la sombra es pareja en las 4 direcciones*/
-    /**/
     transform:scale(1.6);
     transition: all 0.7s ease-in-out;  
 }
@@ -991,8 +891,6 @@ p {
     width: max-content;
     z-index: 120;
     left: 2%;
-    /* right: 2%; */
-    /* margin-left: 2%; */
     margin-right: 2%;
 }
 
@@ -1001,7 +899,6 @@ p {
     width: max-content;
     z-index: 120;
     right: 2%;
-    /* margin-left: 95%; */
 }
 .button {
     background: rgba(255, 255, 255, .5);
@@ -1020,7 +917,6 @@ p {
     font-size: 3rem;
     color: orangered;
 }
-
 #page0 {
     position: relative;
     float: left;
@@ -1028,7 +924,6 @@ p {
     max-width: 100%;
     min-height: 98vh;
     transition: all .7s;
-    /* align-items: flex-end; */
 }
 #page2 {
     position: relative;
@@ -1046,12 +941,10 @@ p {
     /* justify-content: space-around; */
     /* align-items: center; */
     flex-wrap: wrap;
-
 }
-#page1, #page3, #page5, #page6{
+#page3, #page5{
     width: 100%;
     max-width: 100%;
-    /* height: 98vh; */
     height: max-content;
     min-height: max-content;
     max-height: max-content;
@@ -1076,9 +969,8 @@ p {
     flex-wrap: wrap;
     padding-bottom: 2rem;
 }
-#page1, #page2, #page5{
-    /*background: rgb(192, 192, 192) ;*/
-    background: white; /*rgb(241, 240, 240) ; rgb(16, 40, 77); rgb(2, 108, 116);*/
+#page2, #page5{
+    background: white;  
 }
 .contenidoSobreMi {
     float: left;
@@ -1091,8 +983,7 @@ p {
     flex-direction: column;
 }
 .borrar4{
-    /*background: rgb(192, 192, 192) ;*/
-    background: rgba(250, 165, 37, .1); /*rgb(241, 240, 240) ; rgb(16, 40, 77); rgb(2, 108, 116);*/
+    background: rgba(250, 165, 37, .1); 
 }
 #page4 {
     background: rgb(222, 102, 0);
@@ -1104,26 +995,16 @@ p {
     background-color: white;
 }
 #page3 {
-    /* background-color: #FFFFFF; */
-    /* background-image: linear-gradient(180deg, #FFFFFF 0%, #cacbcc 90%, #fff 100%); */
-
     background: white;
-    /*background: linear-gradient(#fff, rgb(240, 240, 240)); /*rgb(250, 250, 250);/*linear-gradient(#fff, rgb(196, 194, 194)); /*rgb(142, 167, 167);*/
     align-items: flex-start;
 }
 #page3 hr {
     margin-bottom: 0;
 }
-#page6 {
-
-    /* background-color: #FFFFFF; */
-    /* background-image: linear-gradient(180deg, #FFFFFF 0%, #cacbcc 90%, #fff 100%); */ 
-
-    /* background: white; */
+/* #page6 {
     background: linear-gradient( rgb(218, 217, 217), #fff); 
-    /*rgb(250, 250, 250);/*linear-gradient(#fff, rgb(196, 194, 194)); /*rgb(142, 167, 167);*/
     align-items: flex-start;
-}
+} */
 
 #page5 {
     text-align: center;
@@ -1132,10 +1013,10 @@ p {
     max-height: max-content;
     min-height: max-content;
 }
-.contenedor-sobre-mi {
+/* .contenedor-sobre-mi {
     float: left;
     position: relative;
-}
+} */
 .animacionCircular {
     position: absolute;
     top: 10rem;
@@ -1149,13 +1030,12 @@ p {
 .fila-completa {
     width: 100%;
 }
-.fondoTeal {
+/* .fondoTeal {
     background-color: teal;
-}
-.fondoTransparente {
+} */
+/* .fondoTransparente {
     background-color: transparent;
-}
-
+} */
 .formulario {
     width: 100%;
     border: 0;
@@ -1164,7 +1044,6 @@ p {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
-
 .animado, .animado1, .animado2, .animado3, .animado4 {
     opacity: 0;
     transition: all 2s;
@@ -1185,10 +1064,10 @@ p {
     animation-duration: 1.5s;
     animation-name: aparecerDelCentro;
 }
-.aparecerDelCentro4 {
+/* .aparecerDelCentro4 {
     animation-duration: 1.5s;
     animation-name: aparecerDelCentro4;
-}
+} */
 .menuLateral {
     animation-duration: 1s;
     animation-name: menuLateral;
@@ -1197,18 +1076,11 @@ p {
     animation-duration: 1s;
     animation-name: menuLateralDesaparece;
 }
-
 .conversemos {
-    /* animation: conversemos 1.5s infinite;  */
-    /* animation-duration: 2s;
-    animation-name: conversemos;
-    animation-iteration-count: infinite; */
-
     animation-duration: 2s;
     animation-name: conversemos;
     animation-iteration-count: infinite;
 }
-
 .entrarDerechaGaleria {
     animation-duration: 1.5s;
     animation-name: entrarDerechaGaleria;
@@ -1247,14 +1119,14 @@ p {
         transform: scaleX(1);
     }
 }
-@keyframes aparecerDelCentro4{
+/* @keyframes aparecerDelCentro4{
     0% {
         transform: scaleY(0);
     }
     100% {
         transform: scaleY(1);
     }
-}
+} */
 @keyframes menuLateral{
     0% {
         transform: scaleX(0);
@@ -1307,12 +1179,35 @@ p {
     border: rgba(255, 255, 255, .8) solid 1px;
     border-radius: 3px;
 }
+.wa {
+    position: fixed;
+    left: 2%;
+    top: 87%;
+    z-index: 199;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    /* border: none; */
+    width: 3rem;
+     height: 3rem;
+     font-size: 2.7rem;
+     border-radius: 50%;
+     background: #54cf02;
+     color: white;
+    }
+.wa a {
+    border-radius: 50%;
+}
+.wa a:hover {
+    opacity: 0.7;
+}
 
 @media (max-width:1280px) {
     .tituloSeccion {
         width: 90%;
     }
-        .toggle-menu, #menu-line, #menu-icon{
+    .toggle-menu, #menu-line, #menu-icon{
         display: block;
     }
     .tres-lineas  {
@@ -1342,46 +1237,28 @@ p {
         height: max-content;
         display: flex;
         align-items: center;
-        /* background: teal; */
-        /* border: none; */
-
-        /* text-align: center; */
     }
-   nav ul, #myMenu {
+    nav ul, #myMenu {
         display: none;
-        background: rgb(0,102,115); /*teal; /* celeste rgb(4, 170, 199);*/
+        background: rgb(0,102,115); 
     }
-   
     #menu {
         width:60%;
         position: absolute;
-        /* left: 0; */
         top: 4.4rem;
         height: max-content;
         align-self: center;
         background-color: transparent;
         padding-bottom: 0;
-
-        
-        /*contenido-menu*/
-        /* padding: 0;
-        flex-direction: column;
-        /* height: max-content; */
-        /* display: flex;
-        align-items: center;
-        background: teal; */
     }
     #mymenu {
         position: absolute;
         display: block;
-        /* width: max-content; */
-        padding: 0;
+         padding: 0;
         padding-right: 1rem;
-       
         height: max-content;
         overflow: hidden;
-        background: rgb(0,102,115); /*teal;*/
-        /* margin-bottom: 2px; */
+        background: rgb(0,102,115); 
     }
     /* #icons {
         display: flex;
@@ -1403,9 +1280,6 @@ p {
         width: 100%;
         text-align: center;
         padding-bottom: 2rem;
-       
-        /* background: white; /* rgb(240, 239, 239); */
-        /*background: linear-gradient(rgb(240, 239, 239), rgb(175, 173, 173));/*teal;*/
     } 
     nav ul li {
         width: 100%;
@@ -1414,14 +1288,12 @@ p {
         padding: 1rem 1rem 0.5rem 1rem;
         font-size: 1.2rem;
         margin-bottom: 1rem;
-        /* align-self: flex-start; */
-        
     }
     #page2{
         padding-top: 6rem;
         padding-bottom: 2rem;
     }
-    #page1, #page3, #page4, #page6{
+    #page3, #page4{
         flex-direction: column;
         padding-top: 6rem;
         padding-bottom: 2rem;
@@ -1435,22 +1307,18 @@ p {
     /* #page3 {
         padding-top: 1rem;
     } */
-    #page1 {
-        padding-top: 7rem;
-    }
     .text1 {
         width: 50%;
         margin-left: 5%;
         align-items: left;
         justify-content: left;
     }
-    .text2, .text3 {
+    /* .text2, .text3 {
         width: 100%;
         min-width: 100%;
         align-items: center;
         justify-content: center;
-    }
-    
+    } */
     .text5 {
         width: 100%;
         min-width: 100%;
@@ -1506,20 +1374,16 @@ p {
         position: relative;
         float: left;
         width: 40%;
-        /* text-align: center;         */
     }
     .alignLeft {
         position: relative;
         float: left;
         text-align: left;
         width: 49%;
-        /* max-width: max-content; */
-        /* margin: 0 auto; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-self: center;
-        /* align-self: flex-start; */
     }
     .elemento:hover {
          transform:scale(1.2);
@@ -1531,14 +1395,15 @@ p {
     #borrar {
         padding: 10rem 3rem 3rem 3rem;
     }
-    
     .tituloSeccion {
         width: 100%;
     }
-    
+    #page3 h3 {
+        margin-left: 1rem;
+    }
     .banner-img {
-        left: 3%;
-        bottom: 1%;
+        left: 10%;
+        /* bottom: 1%; */
     }
     .contactame {
         left: 5%;
@@ -1549,13 +1414,13 @@ p {
     .text1, .animacionCircular{
         width: 100%;
         min-width: 100%;
-        /* float: none; */
         text-align: left;
         margin: auto;
     }
     .slider ul li {
-        min-width: 100%;
-        max-width: 100%;
+        width: 90%;
+        min-width: 90%;
+        max-width: calc(95vw);
         margin: 0;
         height: auto;
     }
@@ -1577,22 +1442,25 @@ p {
     
 
 }
-@media (max-width:620px) {
+@media (max-width:700px) {
     
     .banner-img {
         left: 1%;
-        bottom: 1%;
+        bottom: 20%;
+    }
+    .banner img {
+        object-fit: scale-down;
     }
     .text5 {
         justify-content: center;
     }
-    .data2 {
+    /* .data2 {
         right: 5%;
-    }
-    .marginxx {
+    } */
+    /* .marginxx {
         margin-bottom: 3rem;
         margin-top: 0;
-    }
+    } */
     .contenidoGaleria {
         margin-top: 2%;
     }
@@ -1602,7 +1470,6 @@ p {
     footer .col1, .col2 {
         align-self: center;
     }
-    
     .formulario {
         height: 100vh;
     }
@@ -1614,12 +1481,25 @@ p {
     .contactame {
         left: 1%;
     }
-
+    #page3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     
 }
-@media (max-width:500px) {
-    #page1 {
-        padding-top: 10rem;
+@media (max-width:520px) {
+    .slider ul li {
+        width: calc(100vw);
+        max-width: calc(100vw-10px);
+    }
+    .elemento {
+        width: calc(100vw);
+        max-width: calc(100vw-10px);
+    }
+    .banner {
+        width: calc(100vw);
+        max-width: calc(100vw);
     }
        
 }

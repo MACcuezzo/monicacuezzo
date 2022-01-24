@@ -216,7 +216,7 @@ $(document).ready(function(){
           setTimeout(function(){ 
             animado[index].style.opacity = 1;
             animado[index].classList.add('subirElemento');
-          }, 500+(index*500));
+          }, 500+(index*150));
 
           // animado[index].style.opacity = 1;
           // animado[index].classList.add('subirElemento');
@@ -503,8 +503,6 @@ $(document).ready(function(){
 
        
       
-
-		
     
 });
 
