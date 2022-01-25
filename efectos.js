@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+  // $(window).load(function() {
+    // let id;
+    // id = setInterval($(".loader").fadeOut("slow"), 1000);
+    
+    // document.getElementsByClassName("loader")[0].style.display = 'none';
+  // });
+
+  $(".loader").fadeOut("slow");
+
   let windowTop = $(this).scrollTop();
 
   let elemIzq = document.getElementById("izq");
@@ -44,8 +53,6 @@ $(document).ready(function(){
           pos = 0;
           clearInterval(id);
           id = setInterval(frame, 30);       
-
-              
   };
 
 

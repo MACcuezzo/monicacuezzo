@@ -353,9 +353,20 @@ position: relative;
   right:1rem;
   z-index:200;
 }
+.first-section {
+  margin-top: 8.6rem;
+}
 
-@media (max-width:1280px) {
-  .container {
+@media (max-width:1320px) {
+  .first-section {
+    margin-top: 8rem;
+  }
+}
+  @media (max-width:1280px) {
+  /* .first-section {
+    margin-top: 9rem;
+  } */
+    .container {
     padding: 2rem 2rem 2rem 5rem;
   }
   .celu {
@@ -438,6 +449,10 @@ position: relative;
 }
   
   @media (max-width:900px) {
+    .first-section {
+      margin-top: 8.5rem;
+    }
+    
     .celu {
       top: 50%;
       left: 20%;
@@ -483,7 +498,7 @@ position: relative;
 } */
 .fondo33 {
   /* background-image: url("img/img-movil/daniel-publicaciones-900.jpg"); */
-  background-image: url("img/img-movil/work.jpg");
+  background-image: url("img/img-movil/work2.jpg");
 }
 .fondo44 {
   background-image: url("img/img-movil/congresses.jpg");
@@ -525,6 +540,10 @@ position: relative;
 }
 
   @media (max-width:700px) {
+    .first-section {
+      margin-top: 10rem;
+    }
+    
 /** fondos portfolio1 - CORGOOD **/
 .fondo0 {
   background-image: url("img/img-movil/corgood-portada-700.jpg");
@@ -625,6 +644,24 @@ position: relative;
       background-image: url("img/pu-ganaste.jpg");
     } */
 
+  } 
+
+    @media (max-width:520px) {
+      .celu {
+      /* top: 50%; */
+      left: 15%;
+      width: 18%;
+    }
+    .pc {
+      /* top: 40%; */
+      /* right: 20%; */
+      width: 65%;
+    }
+
     
-    
+  }
+  @media (max-width:350px) {
+    .first-section {
+      margin-top: 11rem;
+    }
   }

@@ -116,7 +116,10 @@ $(document).ready(function(){
           case "#page5":
               $(target).animate({paddingTop: '8rem'},1000);
               break;
-                    
+          case "#pageProceso":
+                $(target).animate({paddingTop: '8rem'},1000);
+                break;
+                      
           default:
             break;
         }

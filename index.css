@@ -48,7 +48,7 @@ a {
 #izq, #der {
     width: 0%;
     height: 100vh;
-    transition: all 7seg ease;
+    /* transition: all 7s ease; */
     font-size: 10vw;
     color: orangered;
     display: flex;
@@ -74,8 +74,9 @@ a {
     max-width: 100%;
 }
 .textoTitulo {
+    /* width: max-content; */
     min-width: max-content;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
 .textoTitulo1 {
@@ -144,7 +145,7 @@ a {
 }
 .textoMonica {
     display: flex;
-    margin-right: 0;
+    margin-right: 5px;
     margin-left: auto;
     align-self:flex-end;
     text-align: right;
@@ -315,6 +316,26 @@ button {
     max-width: 100%;
     min-height: 98vh;
 }
+#pageProceso {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    min-height: 98vh;
+    max-height: max-content;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgb(0,102,115);;
+    
+    padding: 10rem 3rem 3rem 3rem;
+    transition: all .7s;
+    padding-bottom: 2rem;
+    /* font-size: 2rem; */
+}
 /* .borrar1 {
     color: white;
     position: absolute;
@@ -378,6 +399,54 @@ button {
 .servicio:hover h6 {
     color:orange;
 }
+.proceso {
+    float: left;
+    width: 25%;
+    height: 100%;
+    color: orangered;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+     /* overflow: hidden; */
+     /* font-size: 2rem; */
+}
+.proceso h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.proceso i {
+    font-size: 5rem;
+}
+.proceso:hover {
+    background: white;
+    color: teal;
+    
+}
+.proceso:hover p {
+    color: teal;
+    font-weight: bold;
+}
+h5 {
+    color: white;
+}
+.proceso:hover h5 {
+    color: teal;
+}
+.contenidoProceso {
+    /* width: 15rem; */
+    height: max-content;
+    min-height: max-content;
+    margin-top: 0;
+    padding: 1rem;
+    /* transition-property: margin-top;
+    transition-duration: .5s; */
+    color: white;
+    font-size: 1.1rem;
+}
+/* .contenidoProceso:hover {
+    font-weight: bold;
+    background: orangered;
+} */
 .verde {
     color: rgb(0,102,115); 
 }
@@ -397,6 +466,14 @@ button {
     text-align: center;
     color: orangered;
 }
+#pageProceso .borrar8 {
+    height: max-content;
+    min-height: max-content;
+    max-height: max-content;
+    /* border: solid yellowgreen 3px; */
+    /* font-size: 2rem; */
+}
+
 /* .borrar9 {
     width: 100%;
     min-height: 98vh;
@@ -467,6 +544,20 @@ button {
     padding-right: 10%;
     flex-wrap: wrap;
 }
+.proceso-div {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    /* border: yellow solid 3px; */
+    height: max-content;
+    min-height: max-content;
+}
+
 .borrar22{
     display: flex;
     flex-direction: column;
@@ -497,6 +588,9 @@ h3 {
     margin-bottom: 0.5rem;
     color: orangered;
 }
+/* #page6 h3 {
+    color: rgb(230, 94, 3);
+} */
 hr {
     width: 100%;
     margin: auto;
@@ -998,7 +1092,7 @@ p {
     background: white;
     align-items: flex-start;
 }
-#page3 hr {
+#page3 hr, #pageProceso hr {
     margin-bottom: 0;
 }
 /* #page6 {
@@ -1202,6 +1296,38 @@ p {
 .wa a:hover {
     opacity: 0.7;
 }
+.link-footer {
+    font-style: italic;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/preload-40-40.gif') 50% 50% no-repeat white;  /* url('images/pageLoader.gif')  rgb(249,249,249) */
+    /* opacity: .8; */
+    /* animation-name: pre-carga;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+  /* @keyframes pre-carga {
+    0% {
+      transform: opacity(0);
+    }
+    100% {
+      transform: opacity(1);
+    }
+  } */
+  
+.naranja {
+    color: orangered;
+}  
+  
+  
 
 @media (max-width:1280px) {
     .tituloSeccion {
@@ -1310,7 +1436,7 @@ p {
     .text1 {
         width: 50%;
         margin-left: 5%;
-        align-items: left;
+        align-items:flex-start;
         justify-content: left;
     }
     /* .text2, .text3 {
@@ -1388,6 +1514,10 @@ p {
     .elemento:hover {
          transform:scale(1.2);
     }
+    .proceso {
+        width: 30%;
+    }
+ 
     
     
 }
@@ -1439,10 +1569,16 @@ p {
     .elemento:hover {
         transform:scale(1.0);
     }
+    .proceso {
+        width: 50%;
+    }
     
 
 }
 @media (max-width:700px) {
+    .textoTitulo {
+        font-size: 1.6rem;
+    }
     
     .banner-img {
         left: 1%;
@@ -1479,23 +1615,29 @@ p {
         justify-content: center;
     }
     .contactame {
+        top: 15%;
         left: 1%;
     }
     #page3 {
         padding-left: 0;
         padding-right: 0;
     }
-    
+    .proceso {
+        width: 80%;
+    }
     
 }
 @media (max-width:520px) {
+    .textoTitulo {
+        font-size: 1.5rem;
+    }
     .slider ul li {
         width: calc(100vw);
-        max-width: calc(100vw-10px);
+        max-width: calc(100vw);
     }
     .elemento {
         width: calc(100vw);
-        max-width: calc(100vw-10px);
+        max-width: calc(100vw);
     }
     .banner {
         width: calc(100vw);
