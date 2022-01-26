@@ -32,7 +32,12 @@ $(document).ready(function(){
     let portfolio3 = document.getElementById("link21Galeria");
     let portfolio4 = document.getElementById("link31Galeria");
   
-  
+    menuChico = document.getElementById("myMenu");
+    iconoMenuChico = document.getElementsByClassName("toggle-menu");
+    iconoCerrarMenuChico = document.getElementsByClassName("tres-lineas");
+    if (iconoMenuChico[0].style.display =  "block") {
+      iconoCerrarMenuChico[0].style.display = "none";
+    }
     resguardoGaleria(); // cargo los vectores con la galeria de fotos
   
     window.addEventListener('resize', sizeWindow);
@@ -55,12 +60,40 @@ $(document).ready(function(){
     });
 
 
+    function disableScrolling(){
+      var x=window.scrollX;
+      var y=window.scrollY;
+      window.onscroll=function(){window.scrollTo(x, y);};
+    }
+  
+    function enableScrolling(){
+      window.onscroll=function(){};
+    }
 
     
     // Efecto Rebote del menu
 
     $("nav a").on('click', function(){
         var target = $(this).attr('href');
+        enableScrolling();
+
+        // alert(iconoCerrarMenuChico[0].style.display);
+
+        if (iconoCerrarMenuChico[0].style.display == "block") {   // si el menu small esta visible, ocultarlo al elegir una opcion
+          // alert("cerrar menu small");
+          menuChico.classList.add("menuLateralDesaparece");
+          menuChico.classList.remove("menuLateral");
+
+          setTimeout(function () {  menuChico.style.display = "none";  }, 500);
+
+          iconoMenuChico[0].style.display = "block";
+          $(".tres-lineas")[0].style.display = "none";
+
+          menu.style.backgroundColor = "transparent";
+          menu.style.boxShadow = "none";
+          sombra.style.display = "none";
+          w[0].style.display = "none";
+        }
 
         switch (target) {
           case "#page2":
@@ -127,18 +160,15 @@ $(document).ready(function(){
     
     // Fin Efecto Rebote
 
-    menuChico = document.getElementById("myMenu");
-    iconoMenuChico = document.getElementsByClassName("toggle-menu");
-    iconoCerrarMenuChico = document.getElementsByClassName("tres-lineas");
-    if (iconoMenuChico[0].style.display =  "block") {
-      iconoCerrarMenuChico[0].style.display = "none";
-    }
+    
     
     
 
     
   
     $('.toggle-menu').on('click', function(){    //muestra/oculta el boton menu hamburguesa
+        disableScrolling();
+
         var x = document.getElementById("myMenu");
         var y = document.getElementsByClassName("toggle-menu");
         var z = document.getElementsByClassName("tres-lineas");
@@ -162,6 +192,7 @@ $(document).ready(function(){
       });
 
       $(".tres-lineas").on('click', function(){
+        enableScrolling();
         var x = document.getElementById("myMenu");
         var y = document.getElementsByClassName("toggle-menu");
 

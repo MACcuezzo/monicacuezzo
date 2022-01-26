@@ -21,11 +21,45 @@ $(document).ready(function(){
 
   let pageWidth  = document.documentElement.clientWidth ;
 
-    let id;
+  let id;
   let pos;
   let inicial;
+
+  // opcion1
+  // top.document.referrer;
+//   if (document.referrer) //si es verdadero quiere decir que vienes de algun lado
+// alert("Aqui vienes desde: " + document.referrer);
+// else
+// alert("Aqui entras directamente");
+
+// opcion2
+  let prevUrl = document.referrer;
+  // alert(prevUrl);
+  if(prevUrl.indexOf(window.location.host) !== -1) {
+    // Ir a la página anterior
+    //window.history.back();
+
+    //viene de una pag del mismo sitio, en este caso del portfolio, entonces no hacer la presentacion
+    // cargarIndexSinPresentacion();
+    // presentacion();
+  }else{
+    // presentacion();
+    // cargarIndexSinPresentacion();
+  }
   
-  presentacion();
+  var URLhash = window.location.hash;
+// alert(URLhash);
+
+  if (URLhash == "#page3") {
+    // alert("SIN");
+    sinPresentacion();
+  }else{
+    // alert("CON");
+    presentacion();
+
+  }
+
+  alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
   
 
  
@@ -150,8 +184,24 @@ $(document).ready(function(){
          
   }
 
-  
-  
+  function sinPresentacion() { 
+    clearInterval(id);
+    monica.style.display = "none";
+    cuezzo.style.display = "none";
+    analista.style.display = "none";
+    sistemas.style.display = "none";
 
+    elemIzq3.style.display = "flex";
+    elemDer.style.width =  '100%';
+    elemIzq.style.height = 50 + '%';
+    elemDer.style.height =  '10vh';
+    document.getElementById("menu").style.display = "block";
+    document.getElementsByClassName("contactame")[0].style.display = "block";
+    
+             
 
+    // elemIzq.style.fontSize = '2rem';
+    // elemDer.style.fontSize = '2rem';  
+}
+    
 });

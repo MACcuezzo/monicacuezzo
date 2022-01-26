@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
 
+	$(".loader").fadeOut("slow");
+
 	$(window).scroll(function(){
 		var barra = $(window).scrollTop();
 		var posicion = barra * 0.40;

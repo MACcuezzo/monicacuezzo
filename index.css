@@ -315,6 +315,7 @@ button {
     width: 100%;
     max-width: 100%;
     min-height: 98vh;
+    margin-top: 7rem;
 }
 #pageProceso {
     position: relative;
@@ -717,8 +718,11 @@ nav ul li a:hover{
 }
 .banner {
     position: relative;
+    float: left;
     width: 100%;
     max-width: 100%;
+    height: 98vh;
+    min-height: max-content;
     margin: auto;
     margin-top: 4rem;
     align-content: center;
@@ -778,6 +782,9 @@ nav ul li a:hover{
 .text0 {
     width: 100%;
     max-width: 100%;
+    height: 98vh;
+    min-height: max-content;
+    max-height: max-content;
 }
 .text1 {
     float: left;
@@ -790,10 +797,15 @@ nav ul li a:hover{
     color: rgba(0, 0, 0, .7) ;
     line-height: 1.5rem;
     text-align: justify;
-    height: 98vh;
+    height: max-content;
     max-height: max-content;
     min-height: max-content;
     flex-wrap: wrap;
+    padding: 2rem;
+}
+.text1 p {
+    width: 100%;
+    text-align: left;
 }
 /* .text3 {
     float: left;
@@ -994,6 +1006,15 @@ p {
     z-index: 120;
     right: 2%;
 }
+.button1 {
+    /* background: rgba(255, 255, 255, .5); */
+    /* box-shadow: 0 0 15px  rgba(0, 0, 0, .7);  */
+    /* width: 4rem; */
+    /* height: 4rem; */
+    /* border-radius: 50%; */
+    border: none;
+    cursor: pointer;
+}
 .button {
     background: rgba(255, 255, 255, .5);
     box-shadow: 0 0 15px  rgba(0, 0, 0, .7); 
@@ -1016,23 +1037,26 @@ p {
     float: left;
     width: 100%;
     max-width: 100%;
-    min-height: 98vh;
+    /* height: 98vh; */
+    /* min-height: max-content;
+    max-height: max-content; */
     transition: all .7s;
 }
 #page2 {
     position: relative;
+    float: left;
     width: 100%;
     max-width: 100%;
-    /* height: 98vh; */
+    height: 98vh;
     height: max-content;
-    min-height: 98vh;
-    /* min-height: max-content; */
+    /* min-height: 98vh; */
+    min-height: max-content;
     max-height: max-content;
+    margin-top: 5rem;
     padding: 10rem 3rem 3rem 3rem;
     transition: all .7s;
-    float: left;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     /* align-items: center; */
     flex-wrap: wrap;
 }
@@ -1075,6 +1099,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    /* justify-content: space-around; */
 }
 .borrar4{
     background: rgba(250, 165, 37, .1); 
@@ -1418,6 +1443,7 @@ p {
     #page2{
         padding-top: 6rem;
         padding-bottom: 2rem;
+        min-height: max-content;
     }
     #page3, #page4{
         flex-direction: column;
@@ -1434,10 +1460,10 @@ p {
         padding-top: 1rem;
     } */
     .text1 {
-        width: 50%;
-        margin-left: 5%;
-        align-items:flex-start;
-        justify-content: left;
+        width: 100%;
+        margin-left: 0;
+        align-items:center;
+        /* justify-content:center; */
     }
     /* .text2, .text3 {
         width: 100%;
@@ -1485,11 +1511,13 @@ p {
         top: 25%;
     }
     .animacionCircular {
-        position: relative;
-        float: left;
-        width: 40%;
-        top: 0;
         height: max-content;
+        position: relative; 
+        float: left;
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 20% 0 20%;
     }
     .slider ul li {
         min-width: 60%;
@@ -1539,14 +1567,20 @@ p {
         left: 5%;
     }
     #menu {
-        width: 80%;
+        width: 100%;
     }
-    .text1, .animacionCircular{
+    .text1{
         width: 100%;
         min-width: 100%;
-        text-align: left;
-        margin: auto;
+        /* text-align: center; */
+        /* margin: auto; */
     }
+    /* .animacionCircular{
+        width: 100%;
+        min-width: 100%;
+        position: relative; 
+        text-align: center;
+    } */
     .slider ul li {
         width: 90%;
         min-width: 90%;
@@ -1625,6 +1659,10 @@ p {
     .proceso {
         width: 80%;
     }
+    .animacionCircular{
+        padding: 0;
+    }
+
     
 }
 @media (max-width:520px) {
@@ -1636,8 +1674,8 @@ p {
         max-width: calc(100vw);
     }
     .elemento {
-        width: calc(100vw);
-        max-width: calc(100vw);
+        width: calc(95vw);
+        max-width: calc(95vw);
     }
     .banner {
         width: calc(100vw);
