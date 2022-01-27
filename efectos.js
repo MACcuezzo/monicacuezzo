@@ -204,11 +204,6 @@ $(document).ready(function(){
     elemDer.style.height =  '10vh';
     document.getElementById("menu").style.display = "block";
     document.getElementsByClassName("contactame")[0].style.display = "block";
-    
-             
-
-    // elemIzq.style.fontSize = '2rem';
-    // elemDer.style.fontSize = '2rem';  
 }
     
 });

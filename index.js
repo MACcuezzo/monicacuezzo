@@ -440,24 +440,24 @@ $(document).ready(function(){
           }           
         }
 
-        $(".borrar10 p").on('click', function(){
-              let texto = $(".borrar10 p").attr('alt');
-              borrar(texto);
-        });
+        // $(".borrar10 p").on('click', function(){ // esta funcion es para mostrar/ocultar las ventanas de cada cliente
+        //       let texto = $(".borrar10 p").attr('alt');
+        //       borrar(texto);
+        // });
 
-        function borrar(elemento) {
-          document.getElementById('borrar12').style.display = 'block';
-          document.getElementById('borrar14').style.display = 'block';
-          let win = document.getElementById('borrar13');
-          win.style.display = 'block';
-          win.textContent = elemento;
-        }
+        // function borrar(elemento) {
+        //   document.getElementById('borrar12').style.display = 'block';
+        //   document.getElementById('borrar14').style.display = 'block';
+        //   let win = document.getElementById('borrar13');
+        //   win.style.display = 'block';
+        //   win.textContent = elemento;
+        // }
          
-        $(".borrar14 button").on('click', function(){
-          document.getElementById('borrar12').style.display = 'none';
-          document.getElementById('borrar13').style.display = 'none';
-          document.getElementById('borrar14').style.display = 'none';
-        });
+        // $(".borrar14 button").on('click', function(){
+        //   document.getElementById('borrar12').style.display = 'none';
+        //   document.getElementById('borrar13').style.display = 'none';
+        //   document.getElementById('borrar14').style.display = 'none';
+        // });
 
 
         
