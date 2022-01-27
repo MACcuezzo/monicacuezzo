@@ -691,14 +691,51 @@ position: relative;
       /* right: 20%; */
       width: 65%;
     }
+    .fondo3 {
+      background-image: url("img/img-movil/team-520.jpg");
+    }
+    
     .fondo33 {
       background-image: url("img/img-movil/work3-500.jpg");
      } 
-    
+    .fondo4 {
+      background-image: url("img/img-movil/corgood-520.jpg");
+    }
+    .fondo00 {
+      background-image: url("img/img-movil/daniel-cel-520.jpg");
+    }
+    .fondo44 {
+      background-image: url("img/img-movil/congresses-520.jpg");
+    }
+    .fondo22mh {
+      background-image: url("img/img-movil/MH8-521.jpg");
+    }
     
   }
+
+  @media (max-width:450px) {
+    .first-section {
+      margin-top: 12rem;
+    }
+    .fondo4 {
+      background-image: url("img/img-movil/corgood-400.jpg");
+    }
+    .fondo33 {
+      background-image: url("img/img-movil/work3-450.jpg");
+     } 
+     .fondo44 {
+      background-image: url("img/img-movil/congresses-450.jpg");
+    }
+    .fondo22mh {
+      background-image: url("img/img-movil/MH8-401.jpg");
+    }
+     
+}
+
   @media (max-width:350px) {
     .first-section {
-      margin-top: 11rem;
+      margin-top: 15rem;
     }
   }
+
+  

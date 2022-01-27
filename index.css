@@ -1333,7 +1333,7 @@ p {
     z-index: 9999;
     /* text-align: center; */
     /* background-image: linear-gradient(to right, #ffffff, rgba(248, 150, 3, 0.8)); */
-    background: url('img/loader-circular-400.gif') 50% 50% no-repeat white;  /*white*/
+    background: url('img/loading-loader.gif') 50% 50% no-repeat white;  /*white*/
 } 
 
   @keyframes pre-carga {
